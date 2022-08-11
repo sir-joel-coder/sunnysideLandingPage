@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;900&family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+h1,h2 {
+    font-family: 'Fraunces', serif;
+}
+
+
+/* this is the header section */
+.header {
+    height: 100vh;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: 100% 100%;
+    min-height: 35rem;
+    
+
+}
+/* this is the nav container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.side-nav-links {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    font-weight: bold;
+}
+.side-nav-links>a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-nav-links>a:hover {
+    color:black ;
+}
+    
+#contact {
+    padding: 1rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 10rem;
+    background-color: white;
+    color: black;
+}
+#contact:hover {
+    background-color: #68CCFFff;
+}
+#hamburger {
+    display: none;
+}
+#close-btn {
+    display: none;
+}
+
+/* this is the hero container section */
+.hero-section {
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    row-gap: 3rem;
+    padding-top: 3rem;
+    width: 100vw;
+   
+}
+.hero-section >h1 {
+    color: white;
+    letter-spacing: 1.5rem;
+    font-weight: bold;
+}
+
+/* this is the transform section */
+.transform-container {
+    display: flex;  
+}
+.transform-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 9rem ;
+    justify-content: center;
+    width: 50%;
+    background-color: #FFFBF8ff;
+}
+.transform-text-container >span {
+    border-bottom: 5px solid #FAD200ff;
+    width: 7rem;
+    font-weight: bold;
+    line-height: 0.5em;
+    
+}
+.transform-container img {
+    width: 50vw;
+}
+
+/* this is the stand out container */
+.stand-out-container {
+    display: flex;
+}
+.stand-out-container >img {
+    width: 50vw;
+    min-width: 50%;
+}
+.stand-out-text {
+    display: flex;
+    flex-direction: column;
+    padding:0 8rem ;
+    width: 50%;
+    justify-content: center;
+    background-color: #FFFBF8ff;
+}
+.stand-out-text > span {
+    border-bottom: 5px solid #EB7964ff;
+    width: 7rem;
+    font-weight: bold;
+    line-height: 0.5em;
+}
+
+/* this is the graphics and photography design container */
+.background-img-container {
+    display: flex;
+    height: 100vh;
+}
+.graphics-design {
+    display: flex;
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    width: 50%;
+    background-size: 100% 100%;
+    
+}
+.graphics-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 0 10rem;
+    padding-bottom: 2rem;
+}
+.photography {
+    display: flex;
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-size: 100% 100%;
+    width: 50%;
+}
+.photography-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 0 10rem;
+    padding-bottom: 2rem;
+
+}
+
+/* this is the Client Testimonials section */
+.client-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4rem;
+    padding: 5rem 0;
+    background-color: #FFFBF8ff;
+}
+.photo-sec {
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+}
+.emily-sec >img {
+    border-radius:50% ;
+    width: 5rem;
+}
+.emily-sec {
+    width: 20%;
+    text-align: center;
+}
+.thomas > img {
+    border-radius:50% ;
+    width: 5rem;
+}
+.thomas {
+    width: 20%;
+    text-align: center;
+}
+.jennie>img {
+    border-radius:50% ;
+    width: 5rem;
+}
+.jennie {
+    width: 20%;
+    text-align: center;
+}
+
+/* this is the picture section */
+.picture-sec {
+    display: flex;
+}
+.bottle {
+    width: 25%;
+}
+.orange {
+    width: 25%;
+}
+.cone {
+    width: 25%;
+}
+.sugar {
+    width: 25%;
+}
+
+
+/* this is the footer section */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    row-gap: 2rem;
+    background-color: #9ADACEff;
+}
+.next-footer {
+    display: flex;
+    column-gap: 3rem;
+}
+.next-footer>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.next-footer>a:hover {
+    color: white;
+}
+
+.footer-img {
+    display: flex;
+    column-gap: 2rem;
+}
+.footer-img > a:hover {
+   background-color: white;
+
+}
+
+/* this the responsive section */
+@media screen and (max-width:1000px) {
+    .graphics-text {
+        padding: 0 5rem;
+        padding-bottom: 0rem;
+    }
+    .photography-text{
+        padding: 0 5rem;
+        padding-bottom: 0rem;
+    } 
+    .stand-out-text {
+        padding:0 7rem ;
+    }
+    .transform-text-container {
+        padding:0 7rem ;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .stand-out-text {
+        padding:0 5rem ;
+    }
+    .transform-text-container {
+        padding:0 5rem ;
+    }
+       
+}
+
+@media screen and (max-width:750px) {
+    .hero-section >h1 {
+        letter-spacing: 0.5rem;
+    }
+    .transform-text-container {
+        padding: 0 4rem ;
+    }      
+}
+@media screen and (max-width:700px) {
+    .transform-container {
+        flex-direction: column-reverse; 
+    }
+    .transform-text-container {
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        text-align: center;
+
+    }
+    .transform-container img {
+        width: 100%;
+    }
+    .stand-out-container {
+        flex-direction: column;
+    }
+    .stand-out-container >img {
+        width: 100%;
+        min-width: 50%;
+    }
+    .stand-out-text {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        text-align: center;
+    }
+
+    .background-img-container {
+        height: 200vh;
+        
+        flex-direction: column;
+    }
+    .graphics-design {
+        width: 100%;
+        height: 100vh;
+    }
+    .photography {
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 100%;
+    }
+    .hero-section >h1 {
+        color: white;
+        letter-spacing: .2rem;
+        text-align: center;
+        
+    }
+    .photo-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    .emily-sec {
+        width: 50%;
+        text-align: center;
+    }
+    .thomas {
+        width: 50%;
+        text-align: center;
+    }
+    .jennie {
+        width: 50%;
+        text-align: center;
+    }
+    .photography-text{
+        padding: 0 1rem;
+        padding-bottom: 0rem;
+    }  
+    .picture-sec {
+        flex-wrap: wrap;
+        
+    }
+    .bottle {
+        width: 50%;
+    }
+    .orange {
+        width: 50%;
+    }
+    .cone {
+        width: 50%;
+    }
+    .sugar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav-container {
+        padding: 1rem;
+    }
+    .side-nav-links {
+        column-gap: 1rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .nav-container {
+        padding: 1rem;
+    }
+    #contact {
+        padding: 1rem;
+    }
+       
+}
+
+ @media screen and (max-width:450px) {
+    #hamburger {
+        display: flex;
+    }
+    .side-nav-links {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1.5rem;
+        position: fixed;
+        right: 1rem;
+        bottom: 0;
+        top: 4rem;
+        background-color:white; 
+        width: 90%;
+        height: 50%;
+        display: none;
+
+    }
+    #close-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    .side-nav-links>a {
+        color: black;
+    }
+    #contact:hover {
+        background-color:#FAD200ff ;
+    }
+
+    
+ }
+ @media screen and (max-width:400px) {
+    .header {
+        background-image: url(../images/mobile/image-header.jpg);
+        background-size: 100% 100%;
+    }
+    .hero-section {
+        margin-top: 2rem;
+        align-items: center;
+        row-gap: 5rem;
+        padding-top: 3rem;
+ }
+
+ }
+
