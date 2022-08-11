@@ -18,11 +18,9 @@ h1,h2 {
 
 /* this is the header section */
 .header {
-    height: 100vh;
+    height: clamp(35rem, 100vh, 40rem);
     background-image: url(../images/desktop/image-header.jpg);
     background-size: 100% 100%;
-    min-height: 35rem;
-    
 
 }
 /* this is the nav container */
@@ -81,7 +79,7 @@ h1,h2 {
 
 /* this is the transform section */
 .transform-container {
-    display: flex;  
+    display: flex; 
 }
 .transform-text-container {
     display: flex;
@@ -99,7 +97,7 @@ h1,h2 {
     
 }
 .transform-container img {
-    width: 50vw;
+    width: 50%;
 }
 
 /* this is the stand out container */
@@ -107,8 +105,7 @@ h1,h2 {
     display: flex;
 }
 .stand-out-container >img {
-    width: 50vw;
-    min-width: 50%;
+    width: 50%;
 }
 .stand-out-text {
     display: flex;
@@ -128,7 +125,6 @@ h1,h2 {
 /* this is the graphics and photography design container */
 .background-img-container {
     display: flex;
-    height: 100vh;
 }
 .graphics-design {
     display: flex;
@@ -136,6 +132,9 @@ h1,h2 {
     width: 50%;
     background-size: 100% 100%;
     
+}
+.graphics-design, .photography  {
+    height: clamp(30rem,90vh, 38rem);
 }
 .graphics-text {
     display: flex;
@@ -291,9 +290,10 @@ h1,h2 {
     }
     .transform-text-container {
         width: 100%;
-        height: 100vh;
         align-items: center;
         text-align: center;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
 
     }
     .transform-container img {
@@ -301,6 +301,7 @@ h1,h2 {
     }
     .stand-out-container {
         flex-direction: column;
+       
     }
     .stand-out-container >img {
         width: 100%;
@@ -309,24 +310,24 @@ h1,h2 {
     .stand-out-text {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
         align-items: center;
         text-align: center;
     }
 
     .background-img-container {
-        height: 200vh;
-        
         flex-direction: column;
     }
     .graphics-design {
         width: 100%;
-        height: 100vh;
     }
     .photography {
         width: 100%;
-        height: 100vh;
         background-size: 100% 100%;
+    }
+    .graphics-design, .photography  {
+        height: clamp(30rem,70vh, 38rem);
     }
     .hero-section >h1 {
         color: white;
@@ -430,11 +431,12 @@ h1,h2 {
     .header {
         background-image: url(../images/mobile/image-header.jpg);
         background-size: 100% 100%;
+        height: clamp(30rem, 90vh, 35rem);
     }
     .hero-section {
         margin-top: 2rem;
         align-items: center;
-        row-gap: 5rem;
+        row-gap: 3rem;
         padding-top: 3rem;
  }
 
